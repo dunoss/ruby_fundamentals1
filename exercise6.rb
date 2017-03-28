@@ -4,8 +4,10 @@ while true
   choice = gets.chomp
   if choice == "walk"
     distance += 1
+
   elsif choice == "run"
     distance += 5
+
   elsif choice == "go home"
     puts "good job!"
     break
@@ -18,5 +20,6 @@ while true
   end
 end
 
+# did not complete exercise 6.2 "Energy"
 
 #action.downcase.start_with
