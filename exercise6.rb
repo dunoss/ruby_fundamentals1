@@ -6,6 +6,9 @@ while true
     distance += 1
   elsif choice == "run"
     distance += 5
+  elsif choice == "go home"
+    puts "good job!"
+    break
   else
     puts "please select 'walk' or 'run'"
   end
@@ -14,3 +17,6 @@ while true
     puts "Distance from home is #{distance}km"
   end
 end
+
+
+#action.downcase.start_with
