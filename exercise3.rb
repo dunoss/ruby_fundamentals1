@@ -10,3 +10,5 @@ puts "Hi #{name}!"
 puts "How old are you?"
 age = gets
 puts "you were born in #{2017 - age.to_i}"
+
+end
