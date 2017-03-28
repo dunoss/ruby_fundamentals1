@@ -1,12 +1,23 @@
 distance = 0
+energy = 0
 while true
   puts "Would you like to walk or run?"
   choice = gets.chomp
   if choice == "walk"
     distance += 1
+    energy += 1
 
   elsif choice == "run"
-    distance += 5
+    if
+      energy < 5
+      distance += 0
+      energy -= 0
+      puts "walk before you run (5 engery minimum)"
+
+    else
+      distance += 5
+      energy -= 5
+    end
 
   elsif choice == "go home"
     puts "good job!"
@@ -15,11 +26,12 @@ while true
     puts "please select 'walk' or 'run'"
   end
 
-  if distance != 0
-    puts "Distance from home is #{distance}km"
-  end
+
+
+  puts "Distance from home is #{distance}km"
+  puts "your energy level is #{energy}"
+
 end
 
-# did not complete exercise 6.2 "Energy"
 
 #action.downcase.start_with
